@@ -19,6 +19,7 @@ library(reshape2)
 基本的にはタイトルの英文の全訳。
 
 ## Abstract
+有限混合分布において、もし、
 
 
 
