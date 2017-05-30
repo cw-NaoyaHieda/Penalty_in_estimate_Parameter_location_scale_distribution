@@ -5,9 +5,11 @@ title: Strong Consistency of the Maximum Likelihood Estimator for Finite Mixture
 author: "Naoya Hieda"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-  css: styles.css
-
+  pdf_document:
+    latex_engine: lualatex
+documentclass: ltjsarticle
+mainfont: Meiryo
+monofont: Meiryo
 ---
 
 ```{r setup, include=FALSE, error=FALSE, message=FALSE}
