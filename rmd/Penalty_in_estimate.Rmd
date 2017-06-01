@@ -5,8 +5,11 @@ title: Strong Consistency of the Maximum Likelihood Estimator for Finite Mixture
 author: "Naoya Hieda"
 date: "`r Sys.Date()`"
 output:
-  html_document:
-    css: styles.css
+  pdf_document:
+    latex_engine: lualatex
+documentclass: ltjsarticle
+mainfont: Meiryo
+monofont: Meiryo
 ---
 
 ```{r setup, include=FALSE, error=FALSE, message=FALSE}
@@ -59,7 +62,10 @@ f_m(x,\mu_m,\sigma_m)=\frac{1}{\sigma_m}f_m(\frac{x-\mu_m}{\sigma_m};0,1) \hspac
 $$
 ここで$\mu_m$と$\sigma_m$がそれぞれ、位置と尺度のパラメータである。今後、$(\alpha_1,\mu_1,\sigma_1,\dots,\alpha_M,\mu_M,\sigma_M)$を、$\theta$と略し、$(\mu_m,\sigma_m)$を$\theta_m$と略す。また真のパラメータを$\theta_0$とする。
 
-
-
+$\Omega_m=\left\{(\mu_m\sigma_m)|\mu_m\in R,\sigma_m\in(0,\infty)\right\}$と、第m構成要素のパラメータ空間を表す。すると、パラメータ空間全体$\Theta$が次のように再現できる。
+$$
+\Theta = \left\{(\alpha_1,\dots,\alpha_m)|\sum_{m=1}^M\alpha_m=1, \alpha_m\geq0 \right\}\times\prod_{m=1}^M \Omega_m
+$$
+$f(x;\theta_0)$からのサンプル$X=(X_1,\dots,X_n)$
 
 
